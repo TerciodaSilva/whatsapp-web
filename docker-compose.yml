@@ -1,0 +1,11 @@
+version: '3'
+services:
+  whatsapp-web-js:
+    image: node:20
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: sh -c "npm start"
+    
